@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>论坛首页</title>
+<title>登陆后首页</title>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
@@ -11,7 +11,18 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    
+    <link href="../bootstrap3/css/bootstrap.css" rel="stylesheet" />
+    <link href="../assets/css/ct-paper.css" rel="stylesheet"/>
+    <link href="../assets/css/demo.css" rel="stylesheet" /> 
+    <link href="../assets/css/examples.css" rel="stylesheet" /> 
+        
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -93,25 +104,57 @@ body {
 
 <body>
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top "> <a class="navbar-brand" href="#"><img style="height: 30px" src="../过程文档/21-logo.png"/></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-		<ul class="navbar-nav mr-auto">
-		<li class="nav-item active"> <a class="nav-link" href="../../../../../../../Downloads/x_paper_kit_v1.2.2/x_paper_kit_v1.2.2/examples/landing.html">首页 <span class="sr-only">(current)</span></a> </li>
-			<li class="nav-item active"> <a class="nav-link" href="#">论坛</a> </li>
-			<li class="nav-item active"> <a class="nav-link " href="个人页面.html">个人主页</a> </li>
-			<li class="nav-item active"> <a class="nav-link " href="帮助.html">联系我们</a> </li>&nbsp;&nbsp;&nbsp;&nbsp;
-			<li class="nav-item active"> <a class="nav-link " href="#"></a>
-			<button style="margin-top: -20px" type="button" class="btn btn-success">&nbsp;&nbsp;登陆&nbsp;&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;
-			<button style="margin-top: -20px" type="button" class="btn btn-info">&nbsp;&nbsp;注册&nbsp;&nbsp;</button>
-			</li>
-		</ul>
-    <form class="form-inline mt-2 mt-md-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="输入搜索内容" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
-    </form>
-  </div>
-</nav>
+ <nav style="background-color: #3E3B3B;" class="navbar navbar-default" role="navigation-demo" id="demo-navbar">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="www.creative-tim.com"><img style="height: 40px;width: 100px; margin-top: -10px;" src="../../../过程文档/21-logo.png"/></a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navigation-example-2">
+          <ul class="nav navbar-nav navbar-left">
+            <li>
+                <a href="#" style="color:aliceblue" class="btn btn-simple">首页</a>
+            </li>
+       
+<!--
+            <li>
+                <a href="profile.html" style="color:aliceblue" class="btn btn-simple">个人主页</a>
+            </li>
+-->
+            <li>
+                <a href="../../../../Documents/GitHub/PRD-21/PRD-21/PRD-21-C2/非受控文档/界面/帮助.html" style="color:aliceblue" class="btn btn-simple">联系我们</a>
+            </li>
+       
+           </ul>
+           <ul class="nav navbar-nav navbar-right">
+          		 <li>
+          		 	<div class="form-group" style="margin-top:15px">
+        				<input style="border-radius: 15px" type="text" value="" placeholder="搜索" class="form-control" /> 
+    				</div>  
+          		 </li>
+          		 <li>
+          		 	 <button class="btn btn-default btn-fill">搜索</button>
+
+          		 </li>
+           		 <li>
+              
+                <a href="../../../../Documents/GitHub/PRD-21/PRD-21/PRD-21-C2/非受控文档/界面/登陆.html" style="color:aliceblue" class="btn btn-simple">登陆 |</a>
+            </li>
+            <li>
+                <a href="../../../../Documents/GitHub/PRD-21/PRD-21/PRD-21-C2/非受控文档/界面/注册.html" style="margin-left: -30px;color:aliceblue" class="btn btn-simple">注册</a>
+            </li>
+           </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-->
+    </nav>
 <main role="main" class="container">
   	<div class="jumbotron">
    		<div class="row">
@@ -175,7 +218,7 @@ body {
 										<div class="col-xl-9">
 											<div class="aw-question-content">
 											<h4>
-															<a href="http://wenda.ghostchina.com/question/566">软件工程系列课程问题</a>
+															<a href="http://wenda.ghostchina.com/question/566">Ghost 到底应该怎样配置邮件</a>
 														</h4>
 													<a href="http://wenda.ghostchina.com/question/566#!answer_form" class="pull-right text-color-999">回复</a>
 
@@ -202,7 +245,7 @@ body {
 											<div class="aw-question-content">
 											<h4>
 
-															<a href="http://wenda.ghostchina.com/question/566">软件工程系列课程问题</a>
+															<a href="http://wenda.ghostchina.com/question/566">Ghost 到底应该怎样配置邮件</a>
 														</h4>
 													<a href="http://wenda.ghostchina.com/question/566#!answer_form" class="pull-right text-color-999">回复</a>
 
@@ -226,7 +269,7 @@ body {
 										<div class="col-xl-9">
 											<div class="aw-question-content">
 											<h4>
-															<a href="http://wenda.ghostchina.com/question/566">软件工程系列课程问题</a>
+															<a href="http://wenda.ghostchina.com/question/566">Ghost 到底应该怎样配置邮件</a>
 														</h4>
 													<a href="http://wenda.ghostchina.com/question/566#!answer_form" class="pull-right text-color-999">回复</a>
 
@@ -250,7 +293,7 @@ body {
 										<div class="col-xl-9">
 											<div class="aw-question-content">
 											<h4>
-															<a href="http://wenda.ghostchina.com/question/566">软件工程系列课程问题</a>
+															<a href="http://wenda.ghostchina.com/question/566">Ghost 到底应该怎样配置邮件</a>
 														</h4>
 													<a href="http://wenda.ghostchina.com/question/566#!answer_form" class="pull-right text-color-999">回复</a>
 
@@ -276,7 +319,7 @@ body {
 										<div class="col-xl-9">
 											<div class="aw-question-content">
 											<h4>
-															<a href="http://wenda.ghostchina.com/question/566">软件工程系列课程问题</a>
+															<a href="http://wenda.ghostchina.com/question/566">Ghost 到底应该怎样配置邮件</a>
 														</h4>
 													<a href="http://wenda.ghostchina.com/question/566#!answer_form" class="pull-right text-color-999">回复</a>
 
@@ -300,7 +343,7 @@ body {
 										<div class="col-xl-9">
 											<div class="aw-question-content">
 											<h4>
-															<a href="http://wenda.ghostchina.com/question/566">软件工程系列课程问题</a>
+															<a href="http://wenda.ghostchina.com/question/566">Ghost 到底应该怎样配置邮件</a>
 														</h4>
 													<a href="http://wenda.ghostchina.com/question/566#!answer_form" class="pull-right text-color-999">回复</a>
 
@@ -326,7 +369,7 @@ body {
 										<div class="col-xl-9">
 											<div class="aw-question-content">
 											<h4>
-															<a href="http://wenda.ghostchina.com/question/566">软件工程系列课程问题</a>
+															<a href="http://wenda.ghostchina.com/question/566">Ghost 到底应该怎样配置邮件</a>
 														</h4>
 													<a href="http://wenda.ghostchina.com/question/566#!answer_form" class="pull-right text-color-999">回复</a>
 
@@ -350,7 +393,7 @@ body {
 										<div class="col-xl-9">
 											<div class="aw-question-content">
 											<h4>
-															<a href="http://wenda.ghostchina.com/question/566">软件工程系列课程问题</a>
+															<a href="http://wenda.ghostchina.com/question/566">Ghost 到底应该怎样配置邮件</a>
 														</h4>
 													<a href="http://wenda.ghostchina.com/question/566#!answer_form" class="pull-right text-color-999">回复</a>
 
@@ -373,7 +416,7 @@ body {
 										<div class="col-xl-9">
 											<div class="aw-question-content">
 											<h4>
-															<a href="http://wenda.ghostchina.com/question/566">软件工程系列课程问题</a>
+															<a href="http://wenda.ghostchina.com/question/566">Ghost 到底应该怎样配置邮件</a>
 														</h4>
 													<a href="http://wenda.ghostchina.com/question/566#!answer_form" class="pull-right text-color-999">回复</a>
 
@@ -399,7 +442,7 @@ body {
 										<div class="col-xl-9">
 											<div class="aw-question-content">
 											<h4>
-															<a href="http://wenda.ghostchina.com/question/566">软件工程系列课程问题</a>
+															<a href="http://wenda.ghostchina.com/question/566">Ghost 到底应该怎样配置邮件</a>
 														</h4>
 													<a href="http://wenda.ghostchina.com/question/566#!answer_form" class="pull-right text-color-999">回复</a>
 
@@ -490,5 +533,17 @@ body {
    	</div>   
   </div>
 </main>
+<script src="../assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="../assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+
+<script src="../bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+
+<!--  Plugins -->
+<script src="../assets/js/ct-paper-checkbox.js"></script>
+<script src="../assets/js/ct-paper-radio.js"></script>
+<script src="../assets/js/bootstrap-select.js"></script>
+<script src="../assets/js/bootstrap-datepicker.js"></script>
+
+<script src="../assets/js/ct-paper.js"></script>
 </body>
 </html>
